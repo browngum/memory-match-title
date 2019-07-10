@@ -1,0 +1,21 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+    <Label text="Label" />
+    <ActionBar title="Home Page" class="action-bar">
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout>
+
+            <Page xmlns="http://schemas.nativescript.org/tns.xsd">
+                <DockLayout width="2000" height="250" backgroundColor="lightgray"
+                    stretchLastChild="true">
+                    <Label text="" dock="top" height="500" width="2000" backgroundColor="green" />
+                    <Label text="bottom" dock="bottom" backgroundColor="yellow" />
+                </DockLayout>
+            </Page>
+
+            <Button class="btn btn-primary btn-rounded-lg" text="Click Here To Get Started"
+                tap="onButtonTap" />
+        </StackLayout>
+    </ScrollView>
+</Page>
