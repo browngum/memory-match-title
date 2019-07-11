@@ -4,18 +4,12 @@
     </ActionBar>
 
     <ScrollView>
-        <StackLayout>
-
-            <Page xmlns="http://schemas.nativescript.org/tns.xsd">
-                <DockLayout width="2000" height="250" backgroundColor="lightgray"
-                    stretchLastChild="true">
-                    <Label text="" dock="top" height="500" width="2000" backgroundColor="green" />
-                    <Label text="bottom" dock="bottom" backgroundColor="yellow" />
-                </DockLayout>
-            </Page>
-
-            <Button class="btn btn-primary btn-rounded-lg" text="Click Here To Get Started"
+        <DockLayout id="main-layout" stretchLastChild="false">
+            <Button dock="bottom" class="btn btn-primary btn-rounded-lg" text="credits"
+                tap="viewCredits" />
+            <Button dock="bottom" class="btn btn-primary btn-rounded-lg" text="play"
                 tap="onButtonTap" />
-        </StackLayout>
+        </DockLayout>
+
     </ScrollView>
 </Page>
